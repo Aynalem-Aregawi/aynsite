@@ -28,15 +28,15 @@ body {
 }
 
 .center {
-padding: 20%;
+padding: 10%;
 }
 
 #indx {
-font-family:verdana;
+font-family:Arial Black;
 text-align:center;
-color:red;
+color:orange;
 font-style:bold;
-font-sie: 46px
+font-sie: 60px;
 }
 
 #indxp {
