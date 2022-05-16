@@ -21,7 +21,7 @@ font-type: bold;
 
 
 
-/*   .............Body Style ---------------     */
+/*   .............              Body Style               ---------------     */
 
 body {
   background-image:url('b2.png');
@@ -32,11 +32,11 @@ padding: 10%;
 }
 
 #indx {
-font-family:Arial Black;
+font-family:Arial;
 text-align:center;
 color:orange;
 font-style:bold;
-font-sie: 60px;
+font-sie:60px;
 }
 
 #indxp {
