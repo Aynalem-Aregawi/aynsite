@@ -11,7 +11,7 @@ display: inline-block;
 left: 0;
 width: 100%;
 border-style: outset;
-background-color: lightgray;
+background-color: #DAA520;
 }
 
 #introh {
@@ -108,7 +108,7 @@ h2 {
 clear: right;
 margin-top: auto;
 padding-top: 80px;
-font-family:Calibri;
+font-family:Arial;
 text-align:center;
 color:#0066FF;
 font-style:bold;
