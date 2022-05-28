@@ -7,28 +7,35 @@ padding: 1px;
 
 li {
 float: right;
-border-right: 5px solid #bbb;
+/*border-right: 5px solid #bbb;*/
 }
 
 li a {
 display:block;
-padding: 10px;
+padding: 5px;
 background-color: blue;
 color: white;
-font-size: 20Px;
-font-type: bold;
+font-size: 15px;
+font-weight: bold;
+}
+/*------ dropdown style-----------*/
+
+#indxf {
+color: green;
+text-align: center:
 }
 
-
-
-/*   .............              Body Style               ---------------     */
+/*   .............Body Style     */
 
 body {
-  background-image:url('b2.png');
+	
+	background-image:url('b2.png');
+	
 }
 
+
 .center {
-padding: 10%;
+padding: 12%;
 }
 
 #indx {
@@ -36,19 +43,79 @@ font-family:Arial Black;
 text-align:center;
 color:orange;
 font-style:bold;
-font-size: 60px;
+font-size:60px;
 }
 
 #indxp {
-background-border: white;
+background-border: transparent;
 background-margin: 3px;
 background-radius: 10px;
-background-color: white;
-background-padding: 20px;
+/*background-color: transparent;*/
+background-padding: 2px;
+
 
 text-align:center;
-font-size:18pt;
+font-size:18px;
+font-weight: bold;
+
 }
+
+
+/* --------------Marquee Image --------------*/
+.marquee {
+            height: auto%;
+            
+            
+            
+        }
+        
+        .marquee img {
+            position: relative;
+            width: 34%;
+            height: auto%;
+            margin: 0;
+            line-height: auto;
+            text-align: left;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(0%);
+            -moz-animation: scroll-left 2s linear 2;
+            -webkit-animation: scroll-left 2s linear 2;
+            animation: scroll-left 10 linear 2;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(200%);
+            }
+            100% {
+                -moz-transform: translateX(0%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(200%);
+            }
+            100% {
+                -webkit-transform: translateX(0%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(200%);
+                -webkit-transform: translateX(200%);
+                transform: translateX(200%);
+            }
+            100% {
+                -moz-transform: translateX(0%);
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+            }
+        }
+
+
 
 
 /*    ........Footer Style     */
@@ -60,12 +127,10 @@ font-size:18pt;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: gray;
+  background-color: #CF9FFF;
   color: white;
   text-align: center;
 }
 
-#indxf {
-color: green;
-text-align: center:
-}
+/*    ........Footer Style     */
+

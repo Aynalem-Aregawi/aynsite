@@ -9,17 +9,12 @@ background-color: none;
 position: fixed;
 display: inline-block;
 left: 0;
+right: 0;
 width: 100%;
 border-style: outset;
-background-color: #DAA520;
+background-color: #CF9FFF;
 }
 
-#introh {
-text-size: 40px;
-padding: 0;
-float: left;
-color: white;
-}
 
 
 /*      ...........Navigation -----------------   */
@@ -35,7 +30,7 @@ float: right
 
 li {
 float: right;
-border-right: 5px solid #bbb;
+border-right: 3px solid #bbb;
 }
 
 /*-------------------dropdown menu ------------------*/
@@ -44,14 +39,14 @@ border-right: 5px solid #bbb;
 li a, .dropbtn {
 Position: relative;
 display: inline-block;
-padding: 5px;
+padding: 3px;
 background-color: blue;
-line-height: 30px;
+line-height: 16px;
 border-radius: 6px;
 text-decoration: none;
 color: white;
-font-family:
-font-size: 12Px;
+font-family: Arial;
+font-size: 14px;
 font-weight: bold;
 }
 
@@ -76,8 +71,8 @@ li.dropdown {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: green;
-  min-width: 160px;
+  background-color: #CF9FFF;
+  min-width: 100px; /*----check---------------------*/
   box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.0);
   z-index: 1;
 }
@@ -90,7 +85,7 @@ li.dropdown {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color:green;}
+.dropdown-content a:hover {background-color:#CF9FFF;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -104,21 +99,29 @@ li.dropdown {
 border: none;
 clear: right;
 }
+
+#introh {
+font-size: 40px;
+padding: 0;
+float: left;
+color: white;
+}
+
 h2 {
 clear: right;
 margin-top: auto;
-padding-top: 80px;
+padding-top: 37px;
 font-family:Arial;
 text-align:center;
 color:#0066FF;
 font-style:bold;
-font-sie: 46px
+font-size: 36px;
 }
 
 p {
 margin: 5px;
 text-align:justify;
-font-size:18pt;
+font-size:20px;
 }
 /* -----------------images -------------------------*/
 #pict1 {
@@ -162,7 +165,7 @@ input[type=submit]:hover {
 
 div {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 20px;
 }
 
@@ -172,13 +175,14 @@ div {
 
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: gray;
-  color: white;
-  text-align: center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #CF9FFF;
+	color: black;
+	text-align: center;
+	padding-bottom: 2px;
 }
 
 
