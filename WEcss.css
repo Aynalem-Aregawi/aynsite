@@ -1,8 +1,9 @@
 /*      ...........Navigation    */
-nav ul {  
+nav ul { 
+position: relative; 
 list-style-type: none;
 margin: 0;
-padding: 1px;
+padding: 3px;
 }
 
 li {
@@ -12,12 +13,22 @@ float: right;
 
 li a {
 display:block;
-padding: 5px;
-background-color: blue;
+padding: 10px;
+background-color: none; 
 color: white;
 font-size: 15px;
 font-weight: bold;
 }
+
+li a:hover {
+	background-color: #00C39C; /*#123614;*/
+	border-radius: 3px;
+	color: white;
+	padding: 10px;
+	/*border-color: #08CB10;
+	border-width: thick;*/
+}
+
 /*------ dropdown style-----------*/
 
 #indxf {
@@ -29,19 +40,25 @@ text-align: center:
 
 body {
 	
-	background-image:url('b2.png');
+	background-image:url('b2b.png');
 	
 }
 
+.portraite {
+	border-radius: none;
+}
 
 .center {
-padding: 12%;
+padding: 10%;
+}
+.box2 {
+	width:66%;
 }
 
 #indx {
 font-family:Arial Black;
 text-align:center;
-color:orange;
+color: #EBC300; /*#C70039; #7C6C08; #8C1722; #8C176A;  #580645; */
 font-style:bold;
 font-size:60px;
 }
@@ -53,12 +70,14 @@ background-radius: 10px;
 /*background-color: transparent;*/
 background-padding: 2px;
 
-
+/*float: right;*/
 text-align:center;
 font-size:18px;
 font-weight: bold;
+color: #EBC300; /*#7C6C08;*/
 
 }
+
 
 
 /* --------------Marquee Image --------------*/
@@ -75,7 +94,7 @@ font-weight: bold;
             height: auto%;
             margin: 0;
             line-height: auto;
-            text-align: left;
+            
             -moz-transform: translateX(100%);
             -webkit-transform: translateX(100%);
             transform: translateX(0%);
@@ -127,8 +146,10 @@ font-weight: bold;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #CF9FFF;
-  color: white;
+  background-color: #00C39C;  /*#123614;*/
+  color: #002800;
+  font-size: 15px;
+  font-weight: bold;
   text-align: center;
 }
 
