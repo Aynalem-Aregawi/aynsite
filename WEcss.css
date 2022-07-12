@@ -91,7 +91,7 @@ color: #EBC300; /*#7C6C08;*/
         .marquee img {
             position: relative;
             width: 34%;
-            height: auto%;
+            height: auto;
             margin: 0;
             line-height: auto;
             
