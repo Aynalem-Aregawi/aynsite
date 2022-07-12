@@ -81,10 +81,7 @@ color: #EBC300; /*#7C6C08;*/
 
 /* --------------Marquee Image --------------*/
 .marquee {
-            height: auto;
-            
-            
-            
+            height: auto;            
         }
         
         .marquee img {
