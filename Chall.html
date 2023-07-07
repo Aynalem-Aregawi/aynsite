@@ -6,48 +6,157 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-sacle=1">
 <title>Ayn Exercise on HTML,CSS,etc</title>
-<link rel="stylesheet" type="text/css" href="WSpages.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
 <!------Introduction Page -------->
+<style>
+  nav ul { 
+  position: relative; 
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  }
+  
+  li {
+  float: right;
+  /*border-right: 5px solid #bbb;*/
+  }
+  
+  li a {
+  display:block;
+  padding: 10px;
+  background-color: none; 
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color: #f2301b; 
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    
+  }
+  /*------ dropdown style-----------*/
+  
+  #indxf {
+  color: rgb(73, 174, 73);
+  text-align: center;
+  }
+  
+  
+  #indx {
+  font-family:Arial Black;
+  text-align:center;
+  color: #EBC300; 
+  font-style:bold;
+  font-size:60px;
+  }
+  
+  #indxp {
+  border: transparent;
+  margin: 3px;
+  border-radius: 10%;
+  /*background-color: transparent;*/
+  padding: 2px;
+  
+  /*float: right;*/
+  text-align:center;
+  font-size:18px;
+  font-weight: bold;
+  color: #EBC300; /*#7C6C08;*/
+  }
+  .cont {
+    padding-top: 8%;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  /*    ........Footer Style     */
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1px;
+    background-color: #fa2f1d;  /*#123614;*/
+    color: #b3ecb3;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /*    ........Footer Style     */
+  
+  </style>
+
+
 <body>
 
-<div class="header">
-<nav>
-<ul>
- <!---------------dropdown same page navigation---------->
- <li class="dropdown"><a href="Chall.html" class="dropbtn">Challenges</a>
-  <div class="dropdown-content">
-   <a href="#Link1">Security</a>
-   <a href="#Link2">Privacy</a>
-   <a href="#Link3">Safety</a>
-   </div>
- </li>
-<!------------------------------------------------------->
- <li><a href="Appl.html">Application</a></li>
- <li><a href="Proto.html">Protocols</a></li>
- <li><a href="Arch.html">Architecture</a></li>
- <li><a href="Intro.html">Introduction</a></li>
- <li><a href="Index.html">Home</a></li>      
-</ul>
-</nav>
-</div>
+  <header data-bs-theme="gray">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-grey">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><h3>My IoT Site</h3></a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link"  href="Intro.html">Introduction</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="Arch.html">Architecture</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="Proto.html">Protocols</a>
+            </li>
+          
+            <li class="nav-item">
+                <a class="nav-link" href="Appl.html">Application</a>
+              </li>
+  
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  href="Chall.html">Challenges</a>
+            </li>
 
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header> 
+
+ 
+<!------------------------------------------------------->
+ 
+
+<!---------------------nav end----------------------------->
 <div class="cont">
 
-<h2 id="Link1">Security</h2>
+<h2>Security</h2>
 <p > IoT presents a peculiar security challenge because of the massive number of connected devices that expand the attack vector or surface area and secondly because of the computation and memory constraint that makes it dificult to install an elaborate security software in the devices. To overcome this challenge, innovative security approaches are being developed and deployed. Some of the IoT security tools or solutions in use are Zero Trust policy, hardware security, PUF security applications, etc. </p>
 
 
-<h2 id="Link2">Privacy</h2>
+<h2>Privacy</h2>
 <p>Massive data is collected and processed with IoT. These data is either personal or societal/national. How personal data is used raises important privacy questions. So countries have introduced data protection rules to protect their citizens. The GDPR inacted by EU is a case in point. However, this issue is controversial and still deliberation on how to come up with the best privacy protection without stifling innovation is an open question.</p>
 <p> </p>
 
-<h2 id="Link3">Safety</h2>
+<h2>Safety</h2>
 <p>It is important to make sure that software operation in IoT is error free espeially in devices that can put life in hazard. Medical devices, autonomous vehicles, and such devices closely related to human life should be safe or fault proof. The safety of mission critical applications is also important even if it does not involve hazard to humans due to the huge financial or time loss they may incure </p>
 
 <p> If you are interested in IoT, lets get in contact. Simply drop your details in the form below</p>
-
+<p></p>
 
 <!-----------Form----------------------->
 <div>
@@ -61,17 +170,18 @@
     <label for="country">Country</label>
     <select id="country" name="country">
       <option value="usa">America</option>
-      <option value="japan">German</option>
+      <option value="france">France</option>
 	  <option value="india">India</option>
 	  <option value="uk">UK</option>
 	  <option value="kenya">Kenya</option>
-	  
+    <option value="nigeria">Nigeria</option>
+	  <option value="egypt">Egypt</option>
     </select>
   
     <input type="submit" value="Submit">
   </form>
 </div>
-<P>A closing Qoute</p>
+<h4>A closing Qoute</h4>
 <p>Internet of Things is transforming the everyday physical objects that surround us into an ecosystem of information that will enrich our lives. From refrigerators to parking spaces to houses, the Internet of Things is bringing more and more things into the digital fold every day, which will likely make the Internet of Things a multi-trillion dollar industry in the near future. </p><p>PricewaterhouseCoopers report</p> <br> --</br><br> ****</br>
 
 </div>
@@ -79,9 +189,12 @@
 
 <!--------Footer  ------>
 <div class="footer">
-<p>Posted by: Aynalem Aregawi     Contact information: <a href="mailto:aynalem08@gmail.com">aynalem08@gmail.com</a>.</p>
+  <p>Posted by: Aynalem Aregawi (BSc - Electrical Engineering, MSc - Electronics Engineering)</p>
+  <p>Email: <a href="mailto:aynalem08@gmail.com">
+  aynalem08@gmail.com</a></p>
 </div>
 
-</footer>
+<!------Footer End-------------------------->
+<script src="bootstrap.js" ></script>
 </body>
 </html>

@@ -6,49 +6,242 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-sacle=1">
 <title>Ayn Exercise on HTML,CSS,etc</title>
-<link rel="stylesheet" type="text/css" href="WEcss.css">
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
 <!------Home Page -------->
-<section>
+<style>
+  /*--- insert local styles   --*/
+  
+  
+nav ul { 
+position: relative; 
+list-style-type: none;
+margin: 0;
+padding: 3px;
+}
 
-<nav>
-	<div id="overlay">
+li {
+float: right;
+/*border-right: 5px solid #bbb;*/
+}
+
+li a {
+display:block;
+padding: 10px;
+background-color: none; 
+color: white;
+font-size: 15px;
+font-weight: bold;
+}
+
+li a:hover {
+	background-color: #f2301b; 
+	border-radius: 3px;
+	color: white;
+	padding: 10px;
+	
+}
+
+/*------ dropdown style-----------*/
+
+#indxf {
+color: rgb(73, 174, 73);
+text-align: center;
+}
+
+/*   .............Body Style     */
+
+body {
+	
+	background-image:url('b2b.png');
+	
+}
+
+.portraite {
+	border-radius: none;
+}
+
+.center {
+padding: 10%;
+}
+.box2 {
+	width:66%;
+}
+
+#indx {
+font-family:Arial Black;
+text-align:center;
+color: #EBC300; 
+font-style:bold;
+font-size:60px;
+}
+
+#indxp {
+border: transparent;
+margin: 3px;
+border-radius: 10%;
+/*background-color: transparent;*/
+padding: 2px;
+
+/*float: right;*/
+text-align:center;
+font-size:18px;
+font-weight: bold;
+color: #EBC300; /*#7C6C08;*/
+
+}
+
+
+
+/* --------------Marquee Image --------------*/
+.marquee {
+            height: auto;            
+        }
+        
+        .marquee img {
+            position: relative;
+            width: 34%;
+            height: auto;
+            margin: 0;
+            line-height: auto;
+            
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(0%);
+            -moz-animation: scroll-left 2s linear 2;
+            -webkit-animation: scroll-left 2s linear 2;
+            animation: scroll-left 10 linear 2;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(200%);
+            }
+            100% {
+                -moz-transform: translateX(0%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(200%);
+            }
+            100% {
+                -webkit-transform: translateX(0%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(200%);
+                -webkit-transform: translateX(200%);
+                transform: translateX(200%);
+            }
+            100% {
+                -moz-transform: translateX(0%);
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+            }
+        }
+
+/*    ........Footer Style     */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fa2f1d;
+  color: #e9ee94;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*    ........Footer Style     */
+  
+</style>
+
+<section>
+<!--- navigation pane ------------------------------>
+    <header data-bs-theme="gray">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-grey">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h3>My IoT Site</h3></a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="Intro.html">Introduction</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link" href="Arch.html">Architecture</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="Proto.html">Protocolst</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Appl.html">Application</a>
+                  </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="Chall.html">Challenges</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="Proto.html">Protocols</a>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header> 
+<!------ navigation end---------->
+
+<!----- body content -->
+<body>
+    <div id="overlay">
 		<div class="marquee">
 			<img class="portraite" src="aynPort.JPG" align="left" height="auto" width="34%" />
 		</div>
 	</div>
-    <ul>
-      <li><a href="Chall.html">Challenges</a></li>
-      <li><a href="Appl.html">Application</a></li>
-      <li><a href="Proto.html">Protocols</a></li>
-      <li><a href="Arch.html">Architecture</a></li>
-      <li><a href="Intro.html">Introduction</a></li>     
-    </ul>
-  </nav>
-
-<body>
-
-<div class="center">
+    <div class="center">
 
 	<p id="indx">Notes on Internet of Things</p>
 
 	<p id="indxp">This website is under continous development. Your advise and comments are welcome. Click on the email address</p>
 
-</div>
-
+    </div>
+</body>
 </section>
 
 <!--------Footer  ------>
 <div class="footer">
   <p>Posted by: Aynalem Aregawi (BSc - Electrical Engineering, MSc - Electronics Engineering)</p>
   <p>Email: <a href="mailto:aynalem08@gmail.com">
-  aynalem08@gmail.com</a>.</p>
+  aynalem08@gmail.com</a></p>
 </div>
+<!---------Footer end ------------------------------->
 
+<!-----------Google Analytics Script here ----------------------------->
 
 <!--------------         Script ---------------------------------->
 
-<!----<script src="M:\WEB\bootstrap-5.0.2-dist\bootstrap-5.0.2-dist\js" ></script>---->
+<script src="bootstrap.js" ></script>
 </body>
 </html>

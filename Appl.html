@@ -5,35 +5,138 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-sacle=1">
-<title>Ayn Exercise on HTML,CSS,etc</title>
-<link rel="stylesheet" type="text/css" href="WSpages.css">
+<title>My Exercise on HTML,CSS,etc</title>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
 </head>
 
 <!------Introduction Page -------->
-<body>
+<style>
+  nav ul { 
+  position: relative; 
+  list-style-type: none;
+  margin: 0;
+  padding: 3px;
+  }
+  
+  li {
+  float: right;
+  /*border-right: 5px solid #bbb;*/
+  }
+  
+  li a {
+  display:block;
+  padding: 10px;
+  background-color: none; 
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color: #f2301b; 
+    border-radius: 3px;
+    color: white;
+    padding: 10px;
+    
+  }
+  /*------ dropdown style-----------*/
+  
+  #indxf {
+  color: rgb(73, 174, 73);
+  text-align: center;
+  }
+  
+  
+  #indx {
+  font-family:Arial Black;
+  text-align:center;
+  color: #EBC300; 
+  font-style:bold;
+  font-size:60px;
+  }
+  
+  #indxp {
+  border: transparent;
+  margin: 3px;
+  border-radius: 10%;
+  /*background-color: transparent;*/
+  padding: 2px;
+  
+  /*float: right;*/
+  text-align:center;
+  font-size:18px;
+  font-weight: bold;
+  color: #EBC300; /*#7C6C08;*/
+  }
+  .cont {
+    padding-top: 8%;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  /*    ........Footer Style     */
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 1px;
+    background-color: #fa2f1d;  /*#123614;*/
+    color: #b3ecb3;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /*    ........Footer Style     */
+  
+  </style>
+  
+  
+  <body>
+  
+    <header data-bs-theme="gray">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top bg-grey">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><h3>My IoT Site</h3></a>
+    
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link"  href="Intro.html">Introduction</a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="Arch.html">Architecture</a>
+              </li>
 
-<div class="header">
-<nav>
-<ul>
- <li><a href="Chall.html">Challenges</a></li>
-<!---------------dropdown same page navigation---------->
- <li class="dropdown"><a href="Appl.html" class="dropbtn">Application</a>
-  <div class="dropdown-content">
-   <a href="#Link1">It is Everywhere</a>
-   <a href="#Link2">Smart X</a>
-   <a href="#Link3">Data X</a>
-   <a href="#Link4">Automation X</a>
-   <a href="#Link5">IoT and Africa</a>
-   </div>
- </li>
-<!------------------------------------------------------->
- <li><a href="Proto.html">Protocols</a></li>
- <li><a href="Arch.html">Architecture</a></li>
- <li><a href="Intro.html">Introduction</a></li>
- <li><a href="Index.html">Home</a></li>      
-</ul>
-</nav>
-</div>
+              <li class="nav-item">
+                <a class="nav-link" href="Proto.html">Protocols</a>
+              </li>
+                                     
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page"  href="Appl.html">Application</a>
+                </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="Chall.html">Challenges</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> 
+  <!-----------------End of Hwader   -------------------->
 
 <div class="cont">
 
@@ -62,11 +165,15 @@ Owing to its huge value, data is labeled as the new oil. The application of data
 </div>
 
 
-<!--------Footer  ------>
+!--------Footer  ------>
+
 <div class="footer">
-<p>Posted by: Aynalem Aregawi     Contact information: <a href="mailto:aynalem08@gmail.com">aynalem08@gmail.com</a>.</p>
+  <p>Posted by: Aynalem Aregawi (BSc - Electrical Engineering, MSc - Electronics Engineering)</p>
+  <p>Email: <a href="mailto:aynalem08@gmail.com">
+  aynalem08@gmail.com</a></p>
 </div>
 
-</footer>
+<!------Footer End-------------------------->
+<script src="bootstrap.js" ></script>
 </body>
 </html>
